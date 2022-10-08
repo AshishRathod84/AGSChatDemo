@@ -6,14 +6,24 @@
 //
 
 import UIKit
+import MyFramework
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.lblTitle.text = "AGS Chat Demo"
+        
     }
 
-
+    @IBAction func onClickLogin(_ sender: UIButton) {
+        print("on Click Login")
+//        self.present(FirstViewController(), animated: true)
+        self.navigationController?.pushViewController(FirstViewController(), animated: true)
+    }
+    
 }
 

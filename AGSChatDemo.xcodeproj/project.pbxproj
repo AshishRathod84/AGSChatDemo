@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		12AADF5728EC537E002CF266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AADF5628EC537E002CF266 /* AppDelegate.swift */; };
-		12AADF5928EC537E002CF266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AADF5828EC537E002CF266 /* SceneDelegate.swift */; };
 		12AADF5B28EC537E002CF266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AADF5A28EC537E002CF266 /* ViewController.swift */; };
 		12AADF5E28EC537E002CF266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12AADF5C28EC537E002CF266 /* Main.storyboard */; };
 		12AADF6028EC537F002CF266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12AADF5F28EC537F002CF266 /* Assets.xcassets */; };
@@ -16,6 +15,8 @@
 		12AADF6E28EC537F002CF266 /* AGSChatDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AADF6D28EC537F002CF266 /* AGSChatDemoTests.swift */; };
 		12AADF7828EC537F002CF266 /* AGSChatDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AADF7728EC537F002CF266 /* AGSChatDemoUITests.swift */; };
 		12AADF7A28EC537F002CF266 /* AGSChatDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AADF7928EC537F002CF266 /* AGSChatDemoUITestsLaunchTests.swift */; };
+		12AADF8828EC5804002CF266 /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AADF8728EC5804002CF266 /* MyFramework.framework */; };
+		12AADF8928EC5804002CF266 /* MyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12AADF8728EC5804002CF266 /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +36,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		12AADF8A28EC5804002CF266 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				12AADF8928EC5804002CF266 /* MyFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		12AADF5328EC537E002CF266 /* AGSChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGSChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AADF5628EC537E002CF266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12AADF5828EC537E002CF266 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		12AADF5A28EC537E002CF266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		12AADF5D28EC537E002CF266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12AADF5F28EC537F002CF266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +63,7 @@
 		12AADF7328EC537F002CF266 /* AGSChatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AGSChatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AADF7728EC537F002CF266 /* AGSChatDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGSChatDemoUITests.swift; sourceTree = "<group>"; };
 		12AADF7928EC537F002CF266 /* AGSChatDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AGSChatDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		12AADF8728EC5804002CF266 /* MyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12AADF8828EC5804002CF266 /* MyFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +99,7 @@
 				12AADF6C28EC537F002CF266 /* AGSChatDemoTests */,
 				12AADF7628EC537F002CF266 /* AGSChatDemoUITests */,
 				12AADF5428EC537E002CF266 /* Products */,
+				12AADF8628EC5804002CF266 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				12AADF5628EC537E002CF266 /* AppDelegate.swift */,
-				12AADF5828EC537E002CF266 /* SceneDelegate.swift */,
 				12AADF5A28EC537E002CF266 /* ViewController.swift */,
 				12AADF5C28EC537E002CF266 /* Main.storyboard */,
 				12AADF5F28EC537F002CF266 /* Assets.xcassets */,
@@ -127,6 +143,14 @@
 			path = AGSChatDemoUITests;
 			sourceTree = "<group>";
 		};
+		12AADF8628EC5804002CF266 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12AADF8728EC5804002CF266 /* MyFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +161,7 @@
 				12AADF4F28EC537E002CF266 /* Sources */,
 				12AADF5028EC537E002CF266 /* Frameworks */,
 				12AADF5128EC537E002CF266 /* Resources */,
+				12AADF8A28EC5804002CF266 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,7 +285,6 @@
 			files = (
 				12AADF5B28EC537E002CF266 /* ViewController.swift in Sources */,
 				12AADF5728EC537E002CF266 /* AppDelegate.swift in Sources */,
-				12AADF5928EC537E002CF266 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
